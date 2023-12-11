@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@fortawesome/angular-fontawesome": "^0.13.0",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1"
-  }
-}

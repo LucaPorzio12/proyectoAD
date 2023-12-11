@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Movie} from "../../common/movie";
 import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
 import {MovieService} from "../../services/movie.service";
+import {faCirclePlus, faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-movie-list',
@@ -177,6 +178,7 @@ export class MovieListComponent implements OnInit {
       this.movieService.deleteMovie(movie._id).subscribe(
         {
           next: value => {
+            this.loadMovies();
             alert(value.status)
           },
           error: err => {
@@ -189,4 +191,7 @@ export class MovieListComponent implements OnInit {
       );
     }
   }
+
+  protected readonly faCirclePlus = faCirclePlus;
+  protected readonly faCircleXmark = faCircleXmark;
 }
