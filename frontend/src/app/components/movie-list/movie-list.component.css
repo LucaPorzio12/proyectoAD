@@ -1,0 +1,19 @@
+#plot{
+  height: 150px;
+}
+
+img{
+  width: 100px;
+}
+
+.border{
+  box-shadow: 2px 2px lightgray;
+}
+
+.row:hover, pointer:hover{
+  cursor: pointer;
+}
+
+h3 fa-icon{
+  color: limegreen;
+}
